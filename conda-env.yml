@@ -1,0 +1,29 @@
+name: auriga
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # channel-specific
+  - astropy
+  - h5py
+  - six
+  - pip:
+    - "git+https://bitbucket.org/grandrt/auriga_public.git"
+
+  # core scientific python
+  - python
+  - pip
+  - numpy
+  - scipy
+  - pandas
+
+  # plotting packages
+  - matplotlib
+  - cmasher
+
+  # for my workflow
+  - jupyter
+  - jupyterlab
+  - flake8
