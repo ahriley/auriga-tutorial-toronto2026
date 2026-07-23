@@ -15,7 +15,7 @@ There's a `conda-env.yml` file in this repo that specifies the packages you need
 * `auriga_public` - lightweight Python scripts for loading and analysing Auriga data available [on BitBucket](https://bitbucket.org/grandrt/auriga_public/src/master/). This can be `pip` installed
 * `cmasher` - for good colormaps
 
-If you want an easy life, just run `conda create -f conda-env.yml`, which will create a conda environment named `auriga` that has everything you need. This will include running `pip install` to get `auriga_public`, using this conda environment's `pip` for minimal contamination.
+If you want an easy life, just run `conda env create -f conda-env.yml`, which will create a conda environment named `auriga` that has everything you need. This will include running `pip install` to get `auriga_public`, using this conda environment's `pip` for minimal contamination.
 
 ## Downloading Auriga
 For this tutorial, you will download the Auriga snapshots locally to your machine. You only need the present-day snapshots ("redshift zero") of the level 4 runs of Au-6 and Au-18, along with the merger trees and "accreted particle lists" for those haloes. This will require ~7 GB of disk storage (if this is a challenge, you can opt for only Au-6 which is ~2.7 GB).
